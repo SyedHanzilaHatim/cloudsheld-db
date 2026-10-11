@@ -15,8 +15,14 @@
     <div class="stats" id="stats"></div>
   </header>
   <div id="error"></div>
+  <div class="toolbar">
+        <input id="q" type="search" placeholder="Search title, author or notes" aria-label="Search books">
+        <select id="filter" aria-label="Filter by status">
+          <option value="all">All books</option><option value="want">Want to read</option><option value="reading">Reading</option><option value="read">Read</option>
+        </select>
+  </div>
   <main>
-    <section class="panel" aria-labelledby="formTitle">
+    <section class="panel formpanel" aria-labelledby="formTitle">
       <h2 id="formTitle">Add a book</h2>
       <div id="formBox">
         <label for="title">Title</label>
@@ -38,12 +44,6 @@
       </div>
     </section>
     <section aria-label="Your books">
-      <div class="toolbar">
-        <input id="q" type="search" placeholder="Search title, author or notes" aria-label="Search books">
-        <select id="filter" aria-label="Filter by status">
-          <option value="all">All books</option><option value="want">Want to read</option><option value="reading">Reading</option><option value="read">Read</option>
-        </select>
-      </div>
       <div class="list" id="list"></div>
     </section>
   </main>
